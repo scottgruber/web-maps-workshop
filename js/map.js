@@ -28,12 +28,22 @@ var parks = [
 //   marker = new L.marker(parks[i]).addTo(map)
 // }
 
+// Step Six
+// Add custom marker icon
+
+var parkIcon = L.icon({
+  iconUrl: 'icons/park.svg',
+  className: 'svg-icon',
+  iconAnchor: [10, 15],
+  popupAnchor: [5, -15]
+})
+
 // Step Four
 // Create unique marker for each coordinate
 var markersArray = []
 
 for (var i = 0; i < parks.length; i++) {
-  markersArray[i] = new L.marker(parks[i]).addTo(map)
+  markersArray[i] = new L.marker(parks[i], { icon: parkIcon }).addTo(map)
 }
 
 // Step Five

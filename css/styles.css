@@ -38,6 +38,11 @@ main {
   width: 300px;
 }
 
+.svg-icon {
+  width: 30px;
+  height: 30px;
+}
+
 aside {
   grid-area: a;
   background: #1f4a87;
