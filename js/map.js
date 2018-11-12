@@ -8,6 +8,29 @@ L.tileLayer(
     attribution: 'Map data &copy; OpenStreetMap contributors'
   }).addTo(map)
 
+// Step Seven
+// Load geojson file
+
+var request = new XMLHttpRequest()
+request.open('GET', 'json/la-county-neighborhoods-v6.geojson', true)
+
+request.onload = function() {
+  if (this.status >= 200 && this.status < 400) {
+    // Success!
+    var geojsonData = JSON.parse(this.response)
+    L.geoJson(geojsonData).addTo(map)
+  } else {
+    // We reached our target server, but it returned an error
+
+  }
+}
+
+request.onerror = function() {
+  // There was a connection error of some sort
+}
+
+request.send()
+
 // Step Two
 // Add marker for Santa Monica pier. Comment out when using an array.
 // var marker = L.marker([34.008611, -118.498611]).addTo(map)
