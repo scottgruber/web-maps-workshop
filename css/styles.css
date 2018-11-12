@@ -1,0 +1,59 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+  font-family: 'Lora', serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: 
+  "h h h"
+  "a m m"
+  "f f f"
+}
+
+header {
+  grid-area: h;
+  justify-self: center;
+}
+
+main {
+  grid-area: m;
+}
+
+#map {
+  height: 70vh;
+  width: 100%;
+}
+
+aside {
+  grid-area: a;
+  background: #1f4a87;
+  color: white;
+  padding: 1em;
+}
+
+footer {
+  grid-area: f;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer ul > li {
+  margin-right: 10px;
+}
+
+h1 {
+  font-weight: 700;
+}
