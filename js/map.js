@@ -22,8 +22,19 @@ var parks = [
   [34.095278, -118.548889],
   [34.073611, -118.24]
 ]
-
+// Uncomment for Step Three and Comment Step Four
 // for loop to iterate over the parks array
-for (var i=0; i<parks.length; i++) {
-  marker = new L.marker(parks[i]).addTo(map)
+// for (var i=0; i<parks.length; i++) {
+//   marker = new L.marker(parks[i]).addTo(map)
+// }
+
+// Step Four
+// Create unique marker for each coordinate
+var markersArray = []
+
+for (var i = 0; i < parks.length; i++) {
+  markersArray[i] = new L.marker(parks[i]).addTo(map)
 }
+
+// Only shows popup for Santa Monica pier
+markersArray[0].bindPopup('<p>Hello World!</p>')
