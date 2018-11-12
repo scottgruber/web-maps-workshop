@@ -34,6 +34,10 @@ main {
   width: 100%;
 }
 
+.markerPopup img {
+  width: 300px;
+}
+
 aside {
   grid-area: a;
   background: #1f4a87;
@@ -52,6 +56,7 @@ footer ul {
 
 footer ul > li {
   margin-right: 10px;
+  font-size: small;
 }
 
 h1 {
