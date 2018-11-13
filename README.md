@@ -74,7 +74,7 @@ This self-paced tutorial covers Leaflet, OpenStreetMap, MapBox and GeoJSON. Each
       content="Leaflet, MapBox and GeoJSON Mapping Tools Workshop"/>
     <meta name="author" content="Your Name" />
     
-	  <script src="lib/leaflet/leaflet.js"></script>
+    <script src="lib/leaflet/leaflet.js"></script>
     <link rel="stylesheet" href="lib/leaflet/leaflet.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
