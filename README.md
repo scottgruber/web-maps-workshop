@@ -1,6 +1,12 @@
 # Map Tools Workshop
 
+This self-paced tutorial covers Leaflet, OpenStreetMap, MapBox and GeoJSON. Each lesson is saved as a commit. Examine the commit history to view changes in the code. Notes on each lesson with step by step instructions are saved in this README.md file.
+
+* [Map Tools Workshop GitHub Repo](https://github.com/scottgruber/map-tools-workshop/)
+* [Map Tools Workshop hosted on GitHub Pages](https://scottgruber.github.io/map-tools-workshop/)
+
 ## Links
+
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Atom](https://atom.io/)
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -11,6 +17,7 @@
 * [Icon Documentation - Leaflet](https://leafletjs.com/reference-1.3.4.html#icon)
 * [Popup documentation - Leaflet](https://leafletjs.com/reference-1.3.4.html#popup)
 * [OpenStreetMap](https://www.openstreetmap.org/#map=4/38.01/-95.84)
+* [OpenStreetMap Tile Servers](https://wiki.openstreetmap.org/wiki/Tile_servers)
 * [Mapbox](https://www.mapbox.com/)
 * [Maki Icons | By Mapbox](https://www.mapbox.com/maki-icons/)
 * [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
