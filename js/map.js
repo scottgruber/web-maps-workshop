@@ -82,7 +82,7 @@ markersArray[0].bindPopup(popup)
 var popup = L.popup({
   minWidth: 300,
   className: 'markerPopup'
-}).setContent('<img src="img/ucla@2X.jpg"><h3><a href="https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles">UCLA</a></h3><p>UCLA is a public research university in the Westwood district of Los Angeles, United States.</p>')
+}).setContent('<img src="img/ucla@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles">UCLA</a></h3><p>UCLA is a public research university in the Westwood district of Los Angeles, United States.</p>')
 
 markersArray[1].bindPopup(popup)
 
