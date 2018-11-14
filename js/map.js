@@ -12,7 +12,7 @@ L.tileLayer(
 // Load geojson file
 
 var request = new XMLHttpRequest()
-request.open('GET', 'json/la-county-neighborhoods-v6.geojson', true)
+request.open('GET', 'json/california-wtdb.geojson', true)
 
 request.onload = function() {
   if (this.status >= 200 && this.status < 400) {
