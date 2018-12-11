@@ -213,6 +213,55 @@ for (var i = 0; i < parks.length; i++) {
 ```
 
 
+## Step 5
+// Step Five
+// Add image and text descriptions to popup and set size
+
+```
+var popup = L.popup({
+  minWidth: 300,
+  className: 'markerPopup'
+}).setContent('<img src="img/sm-pier@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/Santa_Monica_Pier">Santa Monica Pier</a></h3><p>With an iconic entrance, the pier is popular with residents and visitors as a landmark that is over 100 years old.</p>')
+
+markersArray[0].bindPopup(popup)
+
+var popup = L.popup({
+  minWidth: 300,
+  className: 'markerPopup'
+}).setContent('<img src="img/ucla@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/University_of_California,_Los_Angeles">UCLA</a></h3><p>UCLA is a public research university in the Westwood district of Los Angeles, United States.</p>')
+
+markersArray[1].bindPopup(popup)
+
+var popup = L.popup({
+  minWidth: 300,
+  className: 'markerPopup'
+}).setContent('<img src="img/griffith-observatory@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/Griffith_Observatory">Griffith Park Observatory</a></h3><p>The Griffith Park Observatory commands a view of the Los Angeles Basin, including Downtown Los Angeles to the southeast, Hollywood to the south, and the Pacific Ocean to the southwest.</p>')
+
+markersArray[2].bindPopup(popup)
+
+var popup = L.popup({
+  minWidth: 300,
+  className: 'markerPopup'
+}).setContent('<img src="img/getty@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/J._Paul_Getty_Museum">J. Paul Getty Museum</a></h3><p>The Getty Center, one of two Getty campuses, is an art museum located in Brentwood neighborhood of Los Angeles, on a hill top above the west side of the Sepulveda Pass and I-405 freeway. Its collection features Western art from the Middle Ages to the present.</p>')
+
+markersArray[3].bindPopup(popup)
+
+var popup = L.popup({
+  minWidth: 300,
+  className: 'markerPopup'
+}).setContent('<img src="img/topanga-state-park@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/Topanga_State_Park">Topanga State Park</a></h3><p>Topanga State Park is a California state park located in the Santa Monica Mountains, within Los Angeles County, California. It is part of the Santa Monica Mountains National Recreation Area.</p>')
+
+markersArray[4].bindPopup(popup)
+
+var popup = L.popup({
+  minWidth: 300,
+  className: 'markerPopup'
+}).setContent('<img src="img/dodger-stadium@2x.jpg"><h3><a href="https://en.wikipedia.org/wiki/Dodger_Stadium">Dodger Stadium</a></h3><p>Dodger Stadium, occasionally called by the metonym Chavez Ravine, is a baseball park located in the Elysian Park neighborhood of Los Angeles, California, the home field to the Los Angeles Dodgers, the city\'s National League franchise of Major League Baseball (MLB).</p>')
+
+markersArray[5].bindPopup(popup)
+```
+
+
 ## Load a GeoJSON file into your leaflet project
 * Go to UCLA GIS and download geojson file for [Los Angeles County Neighborhoods - Datasets - UCLA Geoportal](https://gis.ucla.edu/geodata/dataset/los-angeles-county-neighborhoods)
 * Save to json folder in project

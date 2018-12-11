@@ -8,29 +8,6 @@ L.tileLayer(
     attribution: 'Map data &copy; OpenStreetMap contributors'
   }).addTo(map)
 
-// Step Seven
-// Load geojson file
-
-var request = new XMLHttpRequest()
-request.open('GET', 'json/california-wtdb.geojson', true)
-
-request.onload = function() {
-  if (this.status >= 200 && this.status < 400) {
-    // Success!
-    var geojsonData = JSON.parse(this.response)
-    L.geoJson(geojsonData).addTo(map)
-  } else {
-    // We reached our target server, but it returned an error
-
-  }
-}
-
-request.onerror = function() {
-  // There was a connection error of some sort
-}
-
-request.send()
-
 // Step Two
 // Add marker for Santa Monica pier. Comment out when using an array.
 // var marker = L.marker([34.008611, -118.498611]).addTo(map)
@@ -45,13 +22,8 @@ var parks = [
   [34.095278, -118.548889],
   [34.073611, -118.24]
 ]
-// Uncomment for Step Three and Comment Step Four
-// for loop to iterate over the parks array
-// for (var i=0; i<parks.length; i++) {
-//   marker = new L.marker(parks[i]).addTo(map)
-// }
 
-// Step Six
+//
 // Add custom marker icon
 
 var parkIcon = L.icon({
@@ -64,6 +36,13 @@ var parkIcon = L.icon({
 // Step Four
 // Create unique marker for each coordinate
 var markersArray = []
+
+var parkIcon = L.icon({
+  iconUrl: 'icons/park.svg',
+  className: 'svg-icon',
+  iconAnchor: [10, 15],
+  popupAnchor: [5, -15]
+})
 
 for (var i = 0; i < parks.length; i++) {
   markersArray[i] = new L.marker(parks[i], { icon: parkIcon }).addTo(map)
