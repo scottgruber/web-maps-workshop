@@ -132,14 +132,14 @@ L.tileLayer(
 
 To complete this lesson, create a new GitHub repository and make an Initial Commit with all your project files to put it in version control. In the next lesson, we’ll add a marker to your map.
 
-## Add a marker to your map.
+## Step 2 Add a marker to your map.
 * In this section we’ll add a marker to your map. 
 * Get a geolocation for something on your map. In my example, I choose the Santa Monica pier which has a geo decimal value of `34.008611, -118.498611`
 * Go into map.js and write this line to add a marker to your map.
 `var marker = L.marker([34.008611, -118.498611]).addTo(map)`
 * Refresh your web page and you’ll see the marker on the map.
 
-### Add multiple markers
+### Step 3 Add multiple markers
 You could copy and paste this line, over and over and swap out the coordinates, but that wouldn’t be as efficient as storing our coordinates in a *nested array* and iterate through it with a *for loop* for each set of coordinates. 
 * Gather some more coordinates, like so:
 ```
@@ -174,7 +174,7 @@ for (var i=0; i<parks.length; i++) {
 
 * Reload map to view
 
-## Create a Popup 
+## Step 4 Create a Popup 
 * When user clicks on a marker a popup modal can display
 * The popup can take html so both text and images can be used.
 * [Popup documentation - Leaflet](https://leafletjs.com/reference-1.3.4.html#popup)
@@ -191,7 +191,7 @@ markersArray[0].bindPopup(popup)
 * Create a markers array to have each marker be a unique value.
 * For this sample we’re duplicating the text and image snippet for each marker. Challenge would be to convert this into an array and make it DRY
 
-## Add custom markers
+## Step 5 Add custom markers and add image and text descriptions to popup
 * Download Maki Icons
 * Add to map.js the following code
 
@@ -213,9 +213,7 @@ for (var i = 0; i < parks.length; i++) {
 ```
 
 
-## Step 5
-// Step Five
-// Add image and text descriptions to popup and set size
+* Add image and text descriptions to popup and set size
 
 ```
 var popup = L.popup({
@@ -262,7 +260,7 @@ markersArray[5].bindPopup(popup)
 ```
 
 
-## Load a GeoJSON file into your leaflet project
+## Step 6 Load a GeoJSON file into your leaflet project
 * Go to UCLA GIS and download geojson file for [Los Angeles County Neighborhoods - Datasets - UCLA Geoportal](https://gis.ucla.edu/geodata/dataset/los-angeles-county-neighborhoods)
 * Save to json folder in project
 * Go to [You Might Not Need jQuery](http://youmightnotneedjquery.com/) to get vanilla JavaScript to load a json file.  I went with IE10 support, but you can select for IE8 or IE9 if you like.
