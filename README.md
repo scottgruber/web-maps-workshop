@@ -5,8 +5,16 @@ This self-paced tutorial covers Leaflet, OpenStreetMap, MapBox and GeoJSON. Each
 * [Map Tools Workshop GitHub Repo](https://github.com/uclaioes/map-tools-workshop/)
 * [Map on GitHub Pages](https://uclaioes.github.io/map-tools-workshop/)
 
-## Links
+## Steps
 
+
+* [Step 1](index-step1.html)
+* [Step 2](index-step2.html)
+* [Step 3](index-step3.html)
+* [Step 4](index-step4.html)
+* [Step 5](index-step5.html)
+
+## Links
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Atom](https://atom.io/)
 * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
