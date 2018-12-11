@@ -2,8 +2,8 @@
 
 This self-paced tutorial covers Leaflet, OpenStreetMap, MapBox and GeoJSON. Each lesson is saved as a commit. Examine the commit history to view changes in the code. Notes on each lesson with step by step instructions are saved in this README.md file.
 
-* [Map Tools Workshop GitHub Repo](https://github.com/scottgruber/map-tools-workshop/)
-* [Map on GitHub Pages](https://scottgruber.github.io/map-tools-workshop/)
+* [Map Tools Workshop GitHub Repo](https://github.com/uclaioes/map-tools-workshop/)
+* [Map on GitHub Pages](https://uclaioes.github.io/map-tools-workshop/)
 
 ## Links
 
